@@ -229,6 +229,67 @@ nav>ul>li>a {
 
 
 
+
+
+
+
+
+.Alex-Kumar-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Alex-Kumar{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 50px 0 20px 0;
+}
+.Alex-main-container{
+    background-color: #250D44;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    
+}
+.alex-name{
+    font-size: 2.6rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.Kumar-name{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #cdcaca;
+    padding-bottom: 10px;
+}
+.alex-icon{
+    display: flex;
+    gap: 10px;
+}
+.online-icon{
+    padding: 4px 4px ;
+    border: 1px solid rgb(11, 134, 200);
+    border-radius: 50%;
+    color: #FFFFFF;
+   background-color: #c2ace01d;
+}
+
+.online{
+  background: linear-gradient(45deg, lab(57.8% 91.61 -36.7), lab(38.36% 66.02 -97.73));
+  background-clip: text;
+  color: transparent;
+}
+
+.kamrul-flex{
+    padding-bottom: 100px;
+}
+
+
+
+
 /* footer code start */
 .back-footer{
     background-image: url(./image/footer-bg.png);
@@ -312,13 +373,31 @@ nav>ul>li>a {
     }
 
 
+
+
+
+
+.Alex-main-container{
+ margin: 0 auto;
+   flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+.alex-icon{
+    justify-content: center;
+}
+
+.kamrul-flex{
+    padding-bottom: 50px;
+}
+
+
     /* footer section code start */
 
     .footer-icon{
     
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-   
 }
 }
 
@@ -349,4 +428,18 @@ nav>ul>li>a {
     .Podcast-item-menu-ber{
         padding: 0 20px;
     }
+
+
+
+    .Alex-main-container{
+ margin: 0 auto;
+   flex-direction: column;
+    width: 90%;
+    text-align: center;
+}
+.alex-icon{
+    justify-content: center;
+}
+
+
 }
