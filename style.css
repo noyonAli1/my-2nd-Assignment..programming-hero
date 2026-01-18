@@ -73,8 +73,194 @@ nav>ul>li>a {
     background: linear-gradient(30deg, rgb(247, 251, 19), rgb(208, 4, 160), rgb(4, 31, 187));
 }
 
+.line-nav {
+    background-color: #383636;
+    border: none;
+    height: 1px;
+
+}
+
+/* main section code start */
+.back-first-img {
+    background-image: url(./image/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
+}
+
+.background-img {
+    background-image: url(./image/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+.new {
+    color: #FFFFFF;
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(8, 182, 34);
+    border-radius: 20px;
+    border: none;
+    color: black;
+}
+
+.back-img-micro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-item {
+    text-align: center;
+}
+
+.main-item>h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+}
+
+.main-item-p {
+    font-size: 1rem;
+    color: #b0acac;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.main-btn {
+    padding: 12px 20px;
+    background: linear-gradient(30deg, rgb(247, 251, 19), rgb(208, 4, 160), rgb(4, 31, 187));
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.main-btn2 {
+    padding: 12px 20px;
+    background-color: #b0acac00;
+    border: 1px solid green;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.icon-main {
+    margin-right: 5px;
+}
+
+.icon-main2 {
+    margin-right: 5px;
+    color: #07db40;
+}
+
+/* Podcast section code start */
+.Podcast-item {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0px;
+    max-width: 1200px;
+}
+
+.Podcast-item-menu {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.Podcast-item-menu-ber {
+    font-size: 1rem;
+    line-height: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    color: #FFFFFF;
+}
 
 
+
+
+
+.card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    padding-bottom: 80px;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    justify-content: center;
+    justify-content: space-around;
+    /* margin: 0 auto; */
+
+}
+
+.card-item {
+    text-align: center;
+}
+
+.card {
+    color: #07db40;
+}
+
+.card-p {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #dfdddd;
+    padding-top: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+
+/* footer code start */
+.back-footer{
+    background-image: url(./image/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container-footer{
+    text-align: center;
+    padding: 90px 0;
+
+}
+.main-footer{
+  color: #FFFFFF;
+    font-size: 4.1rem;  
+}
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 600px;
+    margin:  0 auto;
+    padding: 30px;
+}
+.footer-icon-menu{
+    color: #959393;
+}
+.foot-icon{
+    color: #FFFFFF;
+    margin-right: 5px;
+}
 /* media screen phone*/
 @media screen and (max-width:576px) {
     nav {
@@ -89,27 +275,78 @@ nav>ul>li>a {
         display: block;
         font-size: 20px;
     }
-    .section-width{
+
+    .section-width {
         padding: 0 10px;
     }
+
+    /* main section code start */
+    .background-img {
+        /* width: 200px;
+        height: 200px; */
+        width: 100%;
+    }
+
+    .Podcast-item {
+        padding: 0 20px;
+    }
+
+    .Podcast-item-menu {
+        font-size: 2rem;
+    }
+
+
+    .main-card {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+    }
+    .card-container{
+        margin: 0 auto;
+    }
+    .card-item{
+        padding-top: 40px;
+    }
+    .main-card{
+        gap: 10px;
+    }
+
+
+    /* footer section code start */
+
+    .footer-icon{
+    
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   
+}
 }
 
 /* media screen tad */
 
-@media screen and (min-width:576px) and (max-width:992px){
-      nav {
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav {
         display: none;
     }
 
     .nav-btn {
         display: none;
     }
-    
-      .icon-nav {
+
+    .icon-nav {
         display: block;
         font-size: 20px;
     }
-    .section-width{
+
+    .section-width {
+        padding: 0 20px;
+    }
+
+
+
+
+
+    .Podcast-item-menu-ber{
         padding: 0 20px;
     }
 }
